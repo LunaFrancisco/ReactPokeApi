@@ -41,7 +41,6 @@ export const PokeForm = () => {
         await axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemon}`)
             .then(res => {
                 setPokeApi(res.data)
-                console.log(res.data)
             })
             .catch(err => {
                 console.log(err)
@@ -56,7 +55,6 @@ export const PokeForm = () => {
         await axios.get(`https://pokeapi.co/api/v2/pokemon/${random}`)
             .then(res => {
                 setPokeApi(res.data)
-                console.log(res.data)
             })
             .catch(err => {
                 console.log(err)
