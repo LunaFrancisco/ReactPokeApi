@@ -1,0 +1,26 @@
+{
+    "name": "Ditto",
+    "sprites": 
+        {
+            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png"
+        }
+    ,
+    "abilities": [
+        {
+            "ability": {
+                "name": "limber"
+            }
+        },
+        {
+            "ability": {
+                "name": "imposter"
+            }
+        }
+    ],
+    "moves": [
+        {
+            "move": {
+                "name": "transform"
+            }
+        }]
+}
