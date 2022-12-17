@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/LunaFrancisco/ReactPokeApi/static/css/main.909937d2.css",
+    "main.js": "/LunaFrancisco/ReactPokeApi/static/js/main.753aa642.js",
+    "index.html": "/LunaFrancisco/ReactPokeApi/index.html",
+    "main.909937d2.css.map": "/LunaFrancisco/ReactPokeApi/static/css/main.909937d2.css.map",
+    "main.753aa642.js.map": "/LunaFrancisco/ReactPokeApi/static/js/main.753aa642.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.909937d2.css",
+    "static/js/main.753aa642.js"
+  ]
+}
