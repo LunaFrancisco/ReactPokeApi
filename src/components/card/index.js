@@ -1,14 +1,10 @@
 import React from 'react'
-
 import './index.css'
-
-
 export const Card = ({ data }) => {
-
+  
   return (
-
     <div className="card-content">
-      <h1 className="card-name">{data.name}</h1>
+      <h1 className="card-name">{data.name.charAt(0).toUpperCase() + data.name.slice(1)}</h1>
       <img className="card-img" src={ data.sprites.front_default} alt="" />
      <div className="card-footer">
      <div className="abilities">
@@ -26,7 +22,6 @@ export const Card = ({ data }) => {
       </ul>
      </div >
      </div>
-
      
     </div>
   )
