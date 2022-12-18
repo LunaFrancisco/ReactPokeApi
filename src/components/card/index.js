@@ -1,11 +1,16 @@
 import React from 'react'
+import pktypes from '../../mockup/pk-types.json'
 import './index.css'
+
+
 export const Card = ({ data }) => {
-  
+  let typePokemon = data.types[0].type.name;
+  let linkUrl = pktypes[typePokemon];
   return (
     <div className="card-content">
-      <h1 className="card-name">{data.name.charAt(0).toUpperCase() + data.name.slice(1)}</h1>
-      <img className="card-img" src={ data.sprites.front_default} alt="" />
+     <h1 className="card-name">{data.name.charAt(0).toUpperCase() + data.name.slice(1)}</h1>
+     <img className="image-pktype" src={linkUrl} alt="Pokemon-Type"></img>
+     <img className="card-img" src={data.sprites.front_default} alt="" />
      <div className="card-footer">
      <div className="abilities">
       <h2 className="card-abilities">Abilities</h2>

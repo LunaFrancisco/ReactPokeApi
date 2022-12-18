@@ -42,7 +42,7 @@ export const PokeForm = () => {
                 <h1>PokeBuscador</h1>
                 <div className="search">
                     <div className='input-block'>
-                        <input className='input-text' type="text" placeholder="Ditto" value={pokemon} onChange={changeInput} />
+                        <input className='input-text' type="text" placeholder="Ditto" value={pokemon} onChange={changeInput} required/>
                     </div>
                     <button className='Button '
                         onClick={findPokemon}
