@@ -14,25 +14,26 @@ export const PokeForm = () => {
     
     const findPokemon = async () => {
         await axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemon.toLowerCase()}`)
-            .then(res => {
-                setPokeApi(res.data)
-            })
-            .catch(err => {
-                console.log(err)
-                alert("Pokemon no encontrado")
-            }, [])    
+        .then(res => {
+            setPokeApi(res.data)  
+        })
+        .catch(err => {
+            console.log(err)
+            alert("Pokemon no encontrado")
+        }, [])    
     }
-
+    
     const setRandom = async() => {
         const random = Math.floor(Math.random() * 898) + 1
         await axios.get(`https://pokeapi.co/api/v2/pokemon/${random}`)
-            .then(res => {
-                setPokeApi(res.data)
-            })
-            .catch(err => {
-                console.log(err)
-                alert("Pokemon no encontrado")
-            }, [])
+        .then(res => {
+            setPokeApi(res.data)
+        })
+        .catch(err => {
+            console.log(err)
+
+            alert("Pokemon no encontrado")
+        }, [])
     }
     
     return (
@@ -45,7 +46,7 @@ export const PokeForm = () => {
                         <input className='input-text' type="text" placeholder="Ditto" value={pokemon} onChange={changeInput} required/>
                     </div>
                     <button className='Button '
-                        onClick={findPokemon}
+                       onClick={pokemon?findPokemon:""}
                     >Buscar</button>
                     <button className='Button Yellow' 
                         onClick={setRandom}
